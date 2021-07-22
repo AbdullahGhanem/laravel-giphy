@@ -1,58 +1,19 @@
 # Giphy and Stickers
 
-[![Latest Stable Version](https://poser.pugx.org/romeroqe/giphy-and-stickers/v/stable)](https://packagist.org/packages/romeroqe/giphy-and-stickers) [![Total Downloads](https://poser.pugx.org/romeroqe/giphy-and-stickers/downloads)](https://packagist.org/packages/romeroqe/giphy-and-stickers) [![Latest Unstable Version](https://poser.pugx.org/romeroqe/giphy-and-stickers/v/unstable)](https://packagist.org/packages/romeroqe/giphy-and-stickers) [![License](https://poser.pugx.org/romeroqe/giphy-and-stickers/license)](https://packagist.org/packages/romeroqe/giphy-and-stickers)
+[![Latest Stable Version](https://poser.pugx.org/ghanem/giphy/v/stable)](https://packagist.org/packages/ghanem/giphy) [![Total Downloads](https://poser.pugx.org/ghanem/giphy/downloads)](https://packagist.org/packages/ghanem/giphy) [![Latest Unstable Version](https://poser.pugx.org/ghanem/giphy/v/unstable)](https://packagist.org/packages/ghanem/giphy) [![License](https://poser.pugx.org/ghanem/giphy/license)](https://packagist.org/packages/ghanem/giphy)
 
 A package that provides an interface between [Laravel](https://laravel.com/docs/5.3/) and [Giphy API](http://api.giphy.com/), includes Gifs and Stickers.
 
 ## Installation
-- [Giphy and Stickers on Packagist](https://packagist.org/packages/romeroqe/giphy-and-stickers)
-- [Giphy and Stickers on GitHub](https://github.com/romeroqe/giphy-and-stickers)
+- [Giphy and Stickers on Packagist](https://packagist.org/packages/ghanem/giphy)
+- [Giphy and Stickers on GitHub](https://github.com/ghanem/giphy)
 
-### Composer
 
-First, pull in the package through Composer.
+You can install the package via composer:
 
-``` php
-“require”: {
-    ...
-    "romeroqe/giphy-and-stickers": "dev-master"
-}
+```bash
+composer require ghanem/giphy
 ```
-
-And run composer:
-
-```
-$ composer update
-```
-
-### Provider
-
-Once installed you need to register the service provider with the application. Open up `config/app.php` and find the `providers` key.
-
-``` php
-'providers' => [
-	...
-	Romeroqe\Giphy\GiphyServiceProvider::class,
-	Romeroqe\Giphy\StickersServiceProvider::class,
-
-]
-```
-
-### Facade
-
-This package also ships with a facade which provides the static syntax. You can register the facade in the aliases key of your `config/app.php` file.
-
-```php
-'aliases' => [
-	...
-	'Giphy' => Romeroqe\Giphy\GiphyFacade::class,
-	'Stickers' => Romeroqe\Giphy\StickersFacade::class,
-]
-```
-
-## Quick Examples
-
-You can see [the documentation](https://github.com/giphy/GiphyAPI#giphy-api-documentation) for more information.
 
 ###### Parameters
 + q - search query term or phrase
