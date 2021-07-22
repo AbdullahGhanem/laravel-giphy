@@ -1,10 +1,10 @@
 <?php
 
-namespace Ghanem\Giphy;
+namespace Ghanem\Giphy\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class GiphyFacade extends Facade
+class Giphy extends Facade
 {
     protected static function getFacadeAccessor()
     {
