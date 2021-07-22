@@ -15,6 +15,11 @@ You can install the package via composer:
 composer require ghanem/giphy
 ```
 
+now you need to publish the config file with:
+```bash
+php artisan vendor:publish --provider="Ghanem\Themoviedb\ThemoviedbServiceProvider" --tag="config"
+```
+
 ###### Parameters
 + q - search query term or phrase
 + s - search query term or phrase
