@@ -3,7 +3,6 @@
     "type": "library",
     "description": "A package that provides an interface between Laravel and Giphy API, includes Gifs.",
     "keywords": ["Laravel", "PHP", "Giphy", "API", "Gif"],
-    "version": "1.0.2",
     "homepage": "https://github.com/abdullahghanem/giphy",
     "license": "MIT",
     "authors": [
