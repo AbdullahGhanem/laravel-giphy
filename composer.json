@@ -1,0 +1,49 @@
+{
+    "name": "ghanem/giphy",
+    "type": "library",
+    "description": "A package that provides an interface between Laravel and Giphy API, includes Gifs.",
+    "keywords": ["Laravel", "PHP", "Giphy", "API", "Gif"],
+    "version": "1",
+    "homepage": "https://github.com/abdullahghanem/giphy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "abdullah ghanem",
+            "email": "3bdullah.ghanem@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0"
+    },   
+     "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    }, 
+    "autoload": {
+        "psr-4": {
+            "Ghanem\\Giphy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ghanem\\Giphy\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ghanem\\Giphy\\GiphyServiceProvider"
+            ],
+            "aliases": {
+                "Giphy": "Ghanem\\Giphy\\Facades\\Giphy"
+            }
+        }
+    }, 
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-f": "vendor/bin/phpunit --filter"
+    }
+}
