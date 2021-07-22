@@ -17,7 +17,7 @@ composer require ghanem/giphy
 
 now you need to publish the config file with:
 ```bash
-php artisan vendor:publish --provider="Ghanem\Themoviedb\ThemoviedbServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Ghanem\Giphy\GiphyServiceProvider" --tag="config"
 ```
 
 ###### Parameters
