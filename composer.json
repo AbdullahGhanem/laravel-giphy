@@ -35,7 +35,8 @@
                 "Ghanem\\Giphy\\GiphyServiceProvider"
             ],
             "aliases": {
-                "Giphy": "Ghanem\\Giphy\\Facades\\Giphy"
+                "Giphy": "Ghanem\\Giphy\\Facades\\Giphy",
+                "Stickers": "Ghanem\\Giphy\\Facades\\Stickers"
             }
         }
     }, 

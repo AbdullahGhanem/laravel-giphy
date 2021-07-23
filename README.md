@@ -2,11 +2,11 @@
 
 [![Latest Stable Version](https://poser.pugx.org/ghanem/giphy/v/stable)](https://packagist.org/packages/ghanem/giphy) [![Total Downloads](https://poser.pugx.org/ghanem/giphy/downloads)](https://packagist.org/packages/ghanem/giphy) [![Latest Unstable Version](https://poser.pugx.org/ghanem/giphy/v/unstable)](https://packagist.org/packages/ghanem/giphy) [![License](https://poser.pugx.org/ghanem/giphy/license)](https://packagist.org/packages/ghanem/giphy)
 
-A package that provides an interface between [Laravel](https://laravel.com/docs/8/) and [Giphy API](http://api.giphy.com/), includes Gifs and Stickers.
+A package that provides an interface between [Laravel](https://laravel.com/docs/8.x) and [Giphy API](http://api.giphy.com/), includes Gifs and Stickers.
 
 ## Installation
 - [Giphy and Stickers on Packagist](https://packagist.org/packages/ghanem/giphy)
-- [Giphy and Stickers on GitHub](https://github.com/ghanem/giphy)
+- [Giphy and Stickers on GitHub](https://github.com/abdullahghanem/giphy)
 
 
 You can install the package via composer:

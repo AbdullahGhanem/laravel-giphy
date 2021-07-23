@@ -18,6 +18,11 @@ class GiphyServiceProvider extends ServiceProvider
         $this->app->bind('ghanem-giphy', function () {
             return new GiphyController;
         });
+
+
+        $this->app->bind('ghanem-stickers', function () {
+            return new GiphyController;
+        });
     }
     
     /**
