@@ -16,7 +16,7 @@ class GiphyServiceProvider extends ServiceProvider
         $this->mergeConfigFrom(__DIR__ . '/../config/giphy.php', 'giphy');
 
         $this->app->bind('ghanem-giphy', function () {
-            return new Giphy;
+            return new GiphyController;
         });
     }
     

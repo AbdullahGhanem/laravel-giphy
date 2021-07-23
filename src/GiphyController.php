@@ -4,7 +4,7 @@ namespace Ghanem\Giphy;
 
 use Ghanem\Giphy\Request;
 
-class Giphy
+class GiphyController
 {
     public function search($query, $limit = 25, $offset = 0, $rating = null, $lang = null)
     {
