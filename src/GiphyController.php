@@ -36,7 +36,7 @@ class GiphyController
         return Request::getByIDs('gifs', $ids);
     }
 
-    public function getUserFeeds(array $user_id)
+    public function getUserFeeds($user_id)
     {
         return Request::getUserFeeds($user_id);
     }
