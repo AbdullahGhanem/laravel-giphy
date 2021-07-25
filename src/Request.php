@@ -14,7 +14,7 @@ class Request
     static public function v3($endpoint, array $params = [])
     {
         $params['api_key'] = config('giphy.key');
-        $result = file_get_contents('https: //giphy.com/api/v3/' . $endpoint . "?" . http_build_query($params));
+        $result = file_get_contents('https://giphy.com/api/v3/' . $endpoint . "?" . http_build_query($params));
         return json_decode($result);
     }
 
