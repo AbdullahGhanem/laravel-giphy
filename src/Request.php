@@ -11,6 +11,13 @@ class Request
         return json_decode($result);
     }
 
+    static public function v3($endpoint, array $params = [])
+    {
+        $params['api_key'] = config('giphy.key');
+        $result = file_get_contents('https: //giphy.com/api/v3/' . $endpoint . "?" . http_build_query($params));
+        return json_decode($result);
+    }
+
     static public function search($type, $query, $limit, $offset, $rating, $lang)
     {
         $endpoint = 'v1/' . $type . '/search';
@@ -68,5 +75,11 @@ class Request
             'ids' => implode(',', $ids)
         ];
         return Request::request($endpoint, $params);
+    }
+
+    static public function getUserFeeds($user_id)
+    {
+        $endpoint = 'channels/' . $user_id . '/' . 'gifs';
+        return Request::v3($endpoint);
     }
 }
