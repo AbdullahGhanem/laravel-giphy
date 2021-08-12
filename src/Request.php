@@ -77,9 +77,11 @@ class Request
         return Request::request($endpoint, $params);
     }
 
-    static public function getUserFeeds($user_id)
+    static public function getUserFeeds($user_id, $page)
     {
         $endpoint = 'channels/' . $user_id . '/' . 'gifs';
-        return Request::v3($endpoint);
+        $params = [];
+        isset($page) ? $params['page'] = $page : null;
+        return Request::v3($endpoint, $params);
     }
 }
